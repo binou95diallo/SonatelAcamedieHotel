@@ -35,11 +35,8 @@ body{
     width: 100%;
     color: #784411;
 }
-body h1 h2 h3 h4 h5 h6{
-    columns: #333333;
-}
-.container{
-    width:85%;
+.mycontainer{
+    width:90%;
     margin:auto;
     max-width: 1200px; 
 }
@@ -47,6 +44,8 @@ body h1 h2 h3 h4 h5 h6{
 .header{
     margin: auto;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
     height: 680px;
     background-color: white;
     background-image: url(../images/suitesP.jpg);
@@ -55,102 +54,142 @@ body h1 h2 h3 h4 h5 h6{
     background-position: center;
 }
 
-.navbar{
+.navigation-bar{
     width: 100%;
     height: 70px;
-    
-    float: right;
+    margin: 0px;
+    padding: 0px;
+    line-height: 70px;
     background-color: #1b1839;
 
 }
 
 .logo{
-    width: 40%;
-    float: left;
+    width: 20%;
+    max-width: 200px;
+    margin-top: 10px;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: top;
+  #  border: 1px solid orange;
 }
 .logo img{
-    width: 50%;
-    height: 50px;
+    width: 100%;
+    max-height: 70px;
+    # border: 1px solid green;
 }
 .menu{
-    width: 50%;
+    width: 68%;
+    text-align: right;
+    height: 70px;
+    float: right;
+    border: 1px solid red;
 }
 
-.header img{
-    margin-bottom: 10px;
-    margin-top: 5px;
-    width: 30%;
-    height: 50px;
-    margin-left: 10px;
-   
-}
+
+/*.welcome h1{
+    color:#3a3375;
+     text-align: center;
+}*/
 #menu-icon{
-    background-image: url(../images/menu-icon.jpg);
+    background-image: url(../images/Hamburger_icon.png);
     display: hidden;
     width: 32px;
     height: 32px;
+    background-color: white;
    
 }
-@media only screen and (max-width:640px){
+@media(max-width:640px){
 
 #menu-icon{
     display: inline-block;
-    background-color: black;
+    
 }
-.navbar ul , .navbar:active ul{
-    display: none;
+
+/*.navigation-bar ul , .navigation-bar:active ul{
+    display: block;
     position: absolute;
     padding: 20px;
     background: rgb(27,24,57,0.5);
     right: 10px;
     top: 65px;
-    width: 35%;
-}
-.navbar:hover ul{
+    width: 300px;
+}*/
+.navigation-bar:hover ul{
     display: block;
 }
-.navbar li{
-    text-align: center;
-    width: 100%;
-    padding: 15px 0;
-    margin: 0;
-}
 
-}
-
-.navbar .menu ul {
+.navigation-bar .menu ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
+    border: 1px solid orchid;
 }
-.navbar .menu ul li {
-    display: inline-block;
+.navigation-bar .menu ul li {
+    display:block;
     list-style-type: none;
-    padding: 5px;
-   
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid yellow;
 }
-.navbar .menu li{
-    list-style-type: none;
-}
-.navbar .menu ul li a{
-    padding: 5px 5px;
+.navigation-bar .menu ul li a{
     text-decoration: none;
+    display:block;
+    height: 40px;
     border-radius: 10px 5px 10px 5px;
     transition: ls;
+    border: 1px solid green;
     color:white;
 
 }  
-.navbar .menu ul li a:hover{
+
+}
+
+.navigation-bar .menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid red;
+}
+.navigation-bar .menu ul li {
+    display: inline-block;
+    list-style-type: none;
+    width: 18%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid yellow;
+}
+.navigation-bar .menu ul li a{
+   n padding: 5px 5px;
+    text-decoration: none;
+    display:block;
+    height: 40px;
+    border-radius: 10px 5px 10px 5px;
+    transition: ls;
+    border: 1px solid green;
+    color:white;
+
+}  
+.vider{
+    clear: both;
+}
+/*.navigation-bar .menu ul li a:hover{
     padding: 8px 8px;
     background-color: #3a3375;
-   /* -webkit-animation: masuperanimation 2s;  Safari, Opera, Chrome 
+   -webkit-animation: masuperanimation 2s;  Safari, Opera, Chrome 
     animation: masuperanimation 300ms linear alternate infinite; Tous les autres navigateurs 
-    */
+    
     transform: scale(1.1);
     transition: ls;
     border:2px solid #afabd8;
-}
+}*/
 
 
 .content{
@@ -541,3 +580,7 @@ form{
     color: white;
 }
 
+
+@media only screen and (max-width:740){
+   
+}

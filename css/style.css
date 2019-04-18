@@ -1,0 +1,543 @@
+/* animations css*/
+@-webkit-keyframes masuperanimation { /* Safari, Opera, Chrome */
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(20px) rotate(30deg);
+    }
+}
+
+@keyframes masuperanimation { /* Tous les autres navigateurs */
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(20px) rotate(30deg);
+    }
+}
+/* fin description de l'animation*/
+
+body{
+    font-family:Verdana, Calibri, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    color: #784411;
+}
+body h1 h2 h3 h4 h5 h6{
+    columns: #333333;
+}
+.container{
+    width:85%;
+    margin:auto;
+    max-width: 1200px; 
+}
+
+.header{
+    margin: auto;
+    width: 100%;
+    height: 680px;
+    background-color: white;
+    background-image: url(../images/suitesP.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    
+    float: right;
+    background-color: #1b1839;
+
+}
+
+.logo{
+    width: 40%;
+    float: left;
+}
+.logo img{
+    width: 50%;
+    height: 50px;
+}
+.menu{
+    width: 50%;
+}
+
+.header img{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 30%;
+    height: 50px;
+    margin-left: 10px;
+   
+}
+#menu-icon{
+    background-image: url(../images/menu-icon.jpg);
+    display: hidden;
+    width: 32px;
+    height: 32px;
+   
+}
+@media only screen and (max-width:640px){
+
+#menu-icon{
+    display: inline-block;
+    background-color: black;
+}
+.navbar ul , .navbar:active ul{
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: rgb(27,24,57,0.5);
+    right: 10px;
+    top: 65px;
+    width: 35%;
+}
+.navbar:hover ul{
+    display: block;
+}
+.navbar li{
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+}
+
+}
+
+.navbar .menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar .menu ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+   
+}
+.navbar .menu li{
+    list-style-type: none;
+}
+.navbar .menu ul li a{
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 10px 5px 10px 5px;
+    transition: ls;
+    color:white;
+
+}  
+.navbar .menu ul li a:hover{
+    padding: 8px 8px;
+    background-color: #3a3375;
+   /* -webkit-animation: masuperanimation 2s;  Safari, Opera, Chrome 
+    animation: masuperanimation 300ms linear alternate infinite; Tous les autres navigateurs 
+    */
+    transform: scale(1.1);
+    transition: ls;
+    border:2px solid #afabd8;
+}
+
+
+.content{
+    margin: auto;
+    min-height: 700px;
+    margin-top:20px;
+
+}
+
+.about{
+    width: 100%;
+    text-align: center;
+    border: 1px solid red;
+   
+}
+.containerAbout{
+    width: 96%;
+    margin: auto;
+    max-width: 800px;
+}
+.about-image{
+    width:48% ;
+   
+    display: inline-block;
+    vertical-align: middle;
+}
+.about-image img{
+    width:90%;
+   margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+    font-size: 24px;
+}
+.about-text{
+
+    font-size: 13px;
+    width: 48%;
+    display: inline-block;
+    text-align: justify;
+    vertical-align: middle;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.services{
+    margin-top:70px; 
+    width: 100%;
+    padding-bottom: 50px;
+    text-align: center;
+    border: 1px solid red;
+}
+.services p{
+    text-align: left;
+    font-size: 12px;
+}
+.suites{
+    width: 20%;
+    height: 200px;
+    min-width: 200px;
+    margin-bottom: 15px;
+    vertical-align: top;
+    display: inline-block;
+}
+.suites img{
+    width:85%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.chambres{
+    width: 20%;
+    height: 200px;
+    min-width: 200px;
+    margin-bottom: 15px;
+    vertical-align: top;
+    display: inline-block;
+}
+.chambres img{
+    width:85%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.sallons{
+    width: 20%;
+    height: 200px;
+    min-width: 200px;
+    margin-bottom: 15px;
+    vertical-align: top;
+    display: inline-block;
+}
+.sallons img{
+    width:85%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.restaurant{
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 15px;
+    min-width: 200px;
+}
+.restaurant img{
+    width:85%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.galerie{
+    width: 100%;
+    margin-top: 100px;
+   min-height: 400px;
+}
+
+.galerie img{
+    width:20% ;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 15px 15px 15px 15px;
+    filter:grayscale(100%);
+    transition: ls;
+}
+.galerie img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+p a{
+    font-size: 16px;
+    color:maroon;
+}
+
+/* style de la page restaurant*/
+.contentR{
+    margin: auto;
+    width: 100%;
+    min-height: 500px;
+    margin-top:0px;
+}
+
+.home{
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+video{
+    margin:0  auto;
+    width: 100%;
+    
+}
+.nos-restaurants{
+    margin: auto;
+    width: 100%;
+    margin-top:20px; 
+    min-height: 700px;
+    border: 1px solid magenta;
+}
+.nos-restaurants p{
+    padding: 5px;
+}
+.restau1{
+    width: 20%;
+    min-width: 200px;
+    min-height: 200px;
+    margin-left: 35px;
+    margin-right: 50px;
+    vertical-align: top;
+    display: inline-block;
+}
+.restau1 img{
+    width:90%;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    transition: all 500ms;
+    border-radius: 15px 15px 15px 15px;
+}
+.restau1 img:hover{
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+
+.restau2{
+    width: 20%;
+    min-height: 200px;
+    min-width: 200px;
+    margin-right: 50px;
+    vertical-align: top;
+    display: inline-block;
+}
+.restau2 img{
+    width:90% ;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    transition: all 500ms;
+    border-radius: 15px 15px 15px 15px;
+}
+.restau2 img:hover{
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+/*.restau2hover p{
+    position: relative;
+    top:0;
+}
+.restau2 img:hover{
+    display: block;
+    border: 1px solid red;
+}*/
+
+
+.restau3{
+    width: 20%;
+    min-width: 200px;
+    min-height: 200px;
+    margin-right: 50px;
+    vertical-align: top;
+    display: inline-block;
+}
+.restau3 img{
+    width:90%;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    transition: all 500ms;
+    border-radius: 15px 15px 15px 15px;
+}
+.restau3 img:hover{
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+.restau4{
+    width: 20%;
+    min-width: 200px;
+    min-height: 200px;
+    vertical-align: top;
+    display: inline-block;
+}
+.restau4 img{
+    width:90% ;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    transition: all 500ms;
+    border-radius: 15px 15px 15px 15px;
+}
+.restau4 img:hover{
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+.footer{
+    width: 100%;
+    margin-top: 20px;
+    background-color:#1b1839;
+    min-height: 600px;
+    color: white;
+}
+.contentFooter{
+    width: 100%;
+    border: 1px solid blue;
+    min-height: 500px;
+}
+.find-us{
+width: 20%;
+margin-top: 10px;
+margin-left: 20px;
+float: left;
+border: 1px solid green;
+}
+.find-us .adress{
+    width: 100%;
+    padding: 10px 2px;
+    font-size: 16px;
+    border: 1px solid gray;
+}
+.find-us .adress p{
+    font-size: 14px;
+}
+.find-us .social-link {
+    width: 100%;
+}
+.find-us .social-link img{
+    width: 20%;
+    height: 30px;
+    
+}
+.find-us h5{
+    text-align: center;
+    margin-top: 10px;
+}
+.nav-link{
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    border: 1px solid red;
+}
+.nav-link h5{
+    text-align: center;
+    font-size: 18px;
+}
+.nav-link ul {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    
+    border: 1px solid red;
+}
+.nav-link ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+.nav-link ul li a{
+    display: block;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: underline;
+    
+}
+  
+.contact-form{
+    width: 25%;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #3a3375;
+    float: left;
+    border: 1px solid green;
+}
+.contact-form input{
+    background-color: #756ac9cb;
+}
+.contact-form textarea{
+    background-color: #756ac9cb;
+}
+.contact-form h5{
+    text-align: center;
+}
+form{
+    width: 70%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.map{
+    width: 25%;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    border: 1px solid gray;
+}
+.map iframe{
+    width: 100%;
+}
+.copyright{
+    width: 100%;
+    padding: 5px;
+}
+.copyright p{
+    font-size: 14px;
+    text-align: right;
+    color: white;
+}
+
